@@ -96,6 +96,7 @@ main h2{
     text-align: center;
 }
 
+/* Creates blur effect and background image to project tiles */
 .work div{
     flex: 1;
     margin: 50px;
@@ -106,6 +107,7 @@ main h2{
     -webkit-filter: blur(4px);
 }
 
+/* Creates text boxes for the project titles */
 .work h3{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
@@ -122,6 +124,7 @@ main h2{
     text-align: center;
 }
 
+/* Un-blurs the content tiles making them visible to user */
 .work div:hover{
     filter: none;
     transform: translate(5px, -5px);
