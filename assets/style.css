@@ -5,8 +5,13 @@ body {
     flex-wrap: wrap;
 }
 
+/* Enables smooth scrolling when clicking header links */
 html {
     scroll-behavior: smooth;
+}
+
+p {
+    padding-left: 50px;
 }
 
 header a {
@@ -14,6 +19,7 @@ header a {
     color: white;
 }
 
+/* Aligns content and adds color to header */
 header {
     justify-content: space-between;
     background-color: #20262E;
@@ -29,6 +35,7 @@ header h1 {
 
 }
 
+/* Aligns and spaces navigation links in the header */
 header h2 {
     display: flex;
     flex-direction: row-reverse;
@@ -36,6 +43,8 @@ header h2 {
     width: 50%;
     margin-right: 10px;
 }
+
+/* Makes profile image circular and sized appropriately */
 header img{
     border-radius: 50%;
     height: 100px;
@@ -63,19 +72,6 @@ article p{
     margin: 0 0 0 10px;
 }
 
-.contact p{
-    justify-content: center;
-    font-size: 150%;
-    margin: 0 0 0 10px;
-}
-
-.contact {
-    display: flex;
-    height: 200px;
-    align-items: center;
-    margin-top: 10px;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -100,15 +96,8 @@ main h2{
     text-align: center;
 }
 
-.contact h2{
-    height: 200px;
-    padding-top: 15px;
-    text-align: center;
-}
-
 .work div{
     flex: 1;
-    background-color: lemonchiffon;
     margin: 50px;
     height: 300px;
     background-size: cover;
@@ -142,7 +131,6 @@ main h2{
 #primary{
     flex: 1 1 80%;
     background-image: url(./images/Calculator.jpg);
-    
 }
 
 #secondary{
@@ -167,6 +155,21 @@ main h2{
     flex-flow: row wrap;
 }
 
-p {
-    padding-left: 50px;
+.contact h2{
+    height: 200px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contact p{
+    justify-content: center;
+    font-size: 150%;
+    margin: 0 0 0 10px;
+}
+
+.contact {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin-top: 10px;
 }
