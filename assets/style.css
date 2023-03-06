@@ -5,6 +5,15 @@ body {
     flex-wrap: wrap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 header {
     justify-content: space-between;
     background-color: #20262E;
