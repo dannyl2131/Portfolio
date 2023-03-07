@@ -1,8 +1,9 @@
 body {
-    background-color: #E9E8E8;
+    background-color: #e2dddd;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Enables smooth scrolling when clicking header links */
@@ -21,6 +22,7 @@ header a {
 
 /* Aligns content and adds color to header */
 header {
+    align-items: center;
     justify-content: space-between;
     background-color: #20262E;
     color: white;
@@ -32,16 +34,17 @@ header h1 {
     width: 50%;
     margin-left: 10px;
     padding-top: 10px;
-
+    flex: 1;
 }
 
 /* Aligns and spaces navigation links in the header */
 header h2 {
-    display: flex;
+    text-align: center;
     flex-direction: row-reverse;
-    align-items: center;
+    justify-content: center;
     width: 50%;
     margin-right: 10px;
+    flex: 1;
 }
 
 /* Makes profile image circular and sized appropriately */
@@ -67,8 +70,9 @@ article h2{
     border-right: 5px solid #20262E;
 }
 article p{
+    max-height: 200px;
     justify-content: center;
-    font-size: 150%;
+    font-size: 125%;
     margin: 0 0 0 10px;
 }
 
@@ -103,8 +107,8 @@ main h2{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 /* Creates text boxes for the project titles */
@@ -156,6 +160,7 @@ main h2{
 .content{
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 
 .contact h2{
@@ -175,4 +180,82 @@ main h2{
     height: 200px;
     align-items: center;
     margin-top: 10px;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-wrap: wrap;
+    }
+    article {
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 50px;
+        border-bottom: 5px solid #20262E;
+        width: 100vw;
+        height: fit-content;
+    }
+    article h2{
+        flex: 1;
+        padding-top: 15px;
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        border-right: none;
+    }
+    article p {
+        width: fit-content;
+        flex: 1;
+        margin: 25px 10px 50px 10px;
+        padding: 0;
+    }
+    header {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .work {
+        flex-wrap: wrap;
+        border-bottom: 5px solid #20262E;
+        border-radius: 50px;
+        width: 100vw;
+        /* flex-direction: column; */
+    }
+    .work h2{
+        padding-top: 15px;
+        margin: 0;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+    }
+    .work div{
+        max-width: 80%;
+        max-height: 200px;
+    }
+    .contact {
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 50px;
+        border-bottom: 5px solid #20262E;
+        width: 100vw;
+        height: fit-content;
+    }
+    .contact h2 {
+        border-right: none;
+        text-align: center; 
+        margin: 0;
+        padding: 0;
+        height: 50px;
+    }
+    .contact div p{
+        width: fit-content;
+        flex: 1;
+        margin: 0 0 50px 0;
+        padding: 0;
+    }
+
 }
