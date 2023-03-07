@@ -4,4 +4,4 @@ Hello, this is my portfolio web application where you can view my work and conta
 
 Live link to Web application: https://dannyl2131.github.io/Portfolio/
 
-![](assets\images\Screenshot 2023-03-06 174832.png)
+![image](assets\images\Screenshot 2023-03-06 174832.png
